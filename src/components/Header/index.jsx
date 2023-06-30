@@ -5,7 +5,7 @@ import './Header.module.css'
 
 function Header() {
   return (
-    <div>
+    <div className="header">
       <img className="logoHeader" src={logoHeader} alt="logo" />
       <Link to="/">Accueil</Link>
       <Link to="/about">A propos</Link>
