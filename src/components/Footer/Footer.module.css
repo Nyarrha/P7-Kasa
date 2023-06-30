@@ -1,0 +1,9 @@
+.container{
+    background-color: black;
+    display: flex;
+    color: white;
+}
+
+.logoFooter {
+    width: 10px;
+}
