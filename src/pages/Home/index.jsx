@@ -2,7 +2,7 @@ import Footer from '../../components/Footer'
 import homeLandScape from '../../assets/home-landscape.png'
 import { appartList } from '../../components/Datas/appartList'
 import AppartItem from '../../components/AppartItem'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function Home() {
   return (
