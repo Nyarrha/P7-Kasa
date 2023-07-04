@@ -22,9 +22,9 @@ function Appart(/*{
   return (
     <div className="container">
       id trouvé : {appartId}
-      <img src="image" alt="room" />
+      {/* <img src={image random} alt="room" /> */}
       <div className="header-container">
-        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        <h1>{/* {Title} */}</h1>
         {/* <Rating /> */}
         <ul>{/* <Equipments /> */}</ul>
       </div>
