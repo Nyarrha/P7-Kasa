@@ -3,6 +3,8 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import React from 'react'
+import Up from '../../assets/arrow-up.svg'
+import Down from '../../assets/arrow-down.svg'
 // import { appartList } from '../../components/Datas/appartList'
 
 function Appart(/*{
@@ -38,7 +40,7 @@ function Appart(/*{
                 setDescriptionOpen(false)
               }}
             >
-              <span>ouvrir</span>
+              <span>{Down}</span>
             </button>
           </div>
         ) : (
@@ -50,7 +52,7 @@ function Appart(/*{
                 setDescriptionOpen(true)
               }}
             >
-              <span>fermer</span>
+              <span>{Up}</span>
             </button>
             <p className="details-text">{/* {description} */}</p>
           </div>
@@ -66,7 +68,7 @@ function Appart(/*{
                   setDescriptionOpen(false)
                 }}
               >
-                <span>ouvrir</span>
+                <span>{Down}</span>
               </button>
             </div>
           ) : (
@@ -78,7 +80,7 @@ function Appart(/*{
                   setEquipmentsOpen(false)
                 }}
               >
-                <span>fermer</span>
+                <span>{Up}</span>
               </button>
               <p className="details-text">{/* {equipments} */}</p>
             </div>
