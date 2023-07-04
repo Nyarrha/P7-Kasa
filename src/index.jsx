@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home/'
-import Header from './components/Header/'
-import Error from './components/Error'
-import About from './pages/About'
-import Appart from './pages/Appart'
+import Home from './pages/Home/Home'
+import Header from './components/Header/Header'
+import Error from './components/Error/Error'
+import About from './pages/About/About'
+import Appart from './pages/Appart/Appart'
 
 ReactDOM.render(
   <React.StrictMode>

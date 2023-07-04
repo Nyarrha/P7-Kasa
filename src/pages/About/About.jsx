@@ -1,6 +1,8 @@
 import landscapeAbout from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
-import './About.module.css'
+import './About.module.scss'
 import { useState } from 'react'
+import Up from '../../assets/arrow-up.svg'
+import Down from '../../assets/arrow-down.svg'
 
 function About() {
   const [isFiabilityOpen, setIsFiabilityOpen] = useState(true)
@@ -17,11 +19,10 @@ function About() {
           <button
             className=""
             onClick={() => {
-              // changer sens flèche
               setIsFiabilityOpen(false)
             }}
           >
-            <span>ouvrir</span>
+            <span>{Down}</span>
           </button>
         </div>
       ) : (
@@ -31,11 +32,10 @@ function About() {
             <button
               className=""
               onClick={() => {
-                // changer sens flèche
                 setIsFiabilityOpen(true)
               }}
             >
-              <span>fermer</span>
+              <span>{Up}</span>
             </button>
           </div>
 
@@ -53,11 +53,10 @@ function About() {
           <button
             className=""
             onClick={() => {
-              // changer sens flèche
               setIsRespectOpen(false)
             }}
           >
-            <span>ouvrir</span>
+            <span>{Down}</span>
           </button>
         </div>
       ) : (
@@ -67,11 +66,10 @@ function About() {
             <button
               className=""
               onClick={() => {
-                // changer sens flèche
                 setIsRespectOpen(true)
               }}
             >
-              <span>fermer</span>
+              <span>{Up}</span>
             </button>
           </div>
 
@@ -89,11 +87,10 @@ function About() {
           <button
             className=""
             onClick={() => {
-              // changer sens flèche
               setIsServiceOpen(false)
             }}
           >
-            <span>ouvrir</span>
+            <span>{Down}</span>
           </button>
         </div>
       ) : (
@@ -103,11 +100,10 @@ function About() {
             <button
               className=""
               onClick={() => {
-                // changer sens flèche
                 setIsServiceOpen(true)
               }}
             >
-              <span>fermer</span>
+              <span>{Up}</span>
             </button>
           </div>
 
@@ -125,11 +121,10 @@ function About() {
           <button
             className=""
             onClick={() => {
-              // changer sens flèche
               setIsSecurityOpen(false)
             }}
           >
-            <span>ouvrir</span>
+            <span>{Down}</span>
           </button>
         </div>
       ) : (
@@ -139,11 +134,10 @@ function About() {
             <button
               className=""
               onClick={() => {
-                // changer sens flèche
                 setIsSecurityOpen(true)
               }}
             >
-              <span>fermer</span>
+              <span>{Up}</span>
             </button>
           </div>
           <p>
