@@ -28,7 +28,7 @@ function Appart(/*{
       <div className="header-container">
         <h1>{/* {Title} */}</h1>
         {/* <Rating /> */}
-        <ul>{/* <Equipments /> */}</ul>
+        <ul>{/* <Tags /> */}</ul>
       </div>
       <div className="details-container">
         {isDescriptionOpen ? (
@@ -82,7 +82,7 @@ function Appart(/*{
               >
                 <span>{Up}</span>
               </button>
-              <p className="details-text">{/* {equipments} */}</p>
+              <ul className="details-text">{/* {<Equipments />} */}</ul>
             </div>
           )}
         </div>
