@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer/Footer'
 import homeLandScape from '../../assets/home-landscape.png'
-import { appartList } from '../../components/Datas/appartList'
+import { appartList } from '../../Datas/appartList'
 import AppartItem from '../../components/AppartItem/AppartItem'
 import { Link } from 'react-router-dom'
 
@@ -15,7 +15,7 @@ function Home() {
         <ul className="appart-list">
           {appartList.map(({ id, title, cover }) => {
             return (
-              <Link to={`/apparts/${id}`}>
+              <Link to={`/apparts/:${id}`}>
                 <div key={id}>
                   <AppartItem id={id} cover={cover} title={title} />
                 </div>
