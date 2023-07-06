@@ -5,32 +5,28 @@ import Down from '../../assets/arrow-down.svg'
 function OpenButton({ title, content }) {
   const [isOpen, setOpen] = useState(true)
   return isOpen ? (
-    <li>
-      <div className="title-container">
-        <button
-          className=""
-          onClick={() => {
-            setOpen(false)
-          }}
-        >
-          <span>{Down}</span>
-        </button>
-      </div>
-    </li>
+    <div className="title-container">
+      <button
+        className=""
+        onClick={() => {
+          setOpen(false)
+        }}
+      >
+        <span>{Down}</span>
+      </button>
+    </div>
   ) : (
-    <li>
-      <div className="tab-container">
-        <button
-          className=""
-          onClick={() => {
-            setOpen(true)
-          }}
-        >
-          <span>{Up}</span>
-        </button>
-      </div>
+    <div className="tab-container">
+      <button
+        className=""
+        onClick={() => {
+          setOpen(true)
+        }}
+      >
+        <span>{Up}</span>
+      </button>{' '}
       <p>{content}</p>
-    </li>
+    </div>
   )
 }
 

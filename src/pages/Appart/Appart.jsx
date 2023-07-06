@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom'
 import React from 'react'
 import { appartList } from '../../Datas/appartList'
 import OpenButton from '../../components/OpenButton/OpenButton'
+import Rating from '../../components/Rating/Rating'
+// import Carousel from '../../components/Carousel/Carousel'
 
 function Appart() {
   const { id } = useParams()
@@ -11,10 +13,11 @@ function Appart() {
   return (
     <div className="container" key={id}>
       id trouvé : {appart.id}
-      {/* <Images /> */}
+      {/* <Carousel /> */}
       <div className="header-container">
         <h1>{appart.title}</h1>
-        {/* <Rating /> */}
+        <span>{appart.location}</span>
+        <Rating host={appart.host} rating={appart.rating} />
         <ul>{/* <Tags /> */}</ul>
       </div>
       <div className="details-container">
@@ -25,6 +28,10 @@ function Appart() {
 
         <div className="equipments">
           <h2>Equipements</h2>
+          <div>
+            <OpenButton id={id} content={appart.equipments} />
+          </div>
+
           {/* Liste equipments */}
         </div>
       </div>

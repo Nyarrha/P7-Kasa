@@ -1,7 +1,7 @@
 import Footer from '../../components/Footer/Footer'
 import homeLandScape from '../../assets/home-landscape.png'
 import { appartList } from '../../Datas/appartList'
-import AppartItem from '../../components/AppartItem/AppartItem'
+import AppartCard from '../../components/AppartCard/AppartCard'
 import { Link } from 'react-router-dom'
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
             return (
               <Link to={`/apparts/:${id}`}>
                 <div key={id}>
-                  <AppartItem id={id} cover={cover} title={title} />
+                  <AppartCard id={id} cover={cover} title={title} />
                 </div>
               </Link>
             )

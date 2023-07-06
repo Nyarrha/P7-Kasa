@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function AppartItem({ id, title, cover }) {
+function AppartCard({ id, title, cover }) {
   return (
     <Link to={`/apparts/${id}`}>
       <li className="appart-item">
@@ -11,4 +11,4 @@ function AppartItem({ id, title, cover }) {
   )
 }
 
-export default AppartItem
+export default AppartCard
