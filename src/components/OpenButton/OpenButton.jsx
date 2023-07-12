@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import Up from '../../assets/arrow-up.svg'
-import Down from '../../assets/arrow-down.svg'
+import Up from '../../assets/Up.svg'
+import Down from '../../assets/Down.svg'
 
-function OpenButton({ title, content }) {
+function OpenButton({ content }) {
   const [isOpen, setOpen] = useState(true)
   return isOpen ? (
     <div className="title-container">

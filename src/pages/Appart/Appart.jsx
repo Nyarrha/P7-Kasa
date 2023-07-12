@@ -5,7 +5,8 @@ import React from 'react'
 import { appartList } from '../../Datas/appartList'
 import OpenButton from '../../components/OpenButton/OpenButton'
 import Rating from '../../components/Rating/Rating'
-// import Carousel from '../../components/Carousel/Carousel'
+import Carousel from '../../components/Carousel/Carousel'
+import Tags from '../../components/Tags/Tags'
 
 function Appart() {
   const { id } = useParams()
@@ -13,12 +14,14 @@ function Appart() {
   return (
     <div className="container" key={id}>
       id trouvé : {appart.id}
-      {/* <Carousel /> */}
+      <Carousel pictures={appart.pictures} />
       <div className="header-container">
         <h1>{appart.title}</h1>
         <span>{appart.location}</span>
         <Rating host={appart.host} rating={appart.rating} />
-        <ul>{/* <Tags /> */}</ul>
+        <div className="tags">
+          <Tags tags={appart.tags} />
+        </div>
       </div>
       <div className="details-container">
         <div className="description">

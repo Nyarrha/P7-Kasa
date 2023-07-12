@@ -1,16 +1,19 @@
 // Afficher photo auteur, nom auteur, et fonction notation
 
+import Full from '../../assets/star-active 1.svg'
+import Empty from '../../assets/star-inactive 1.svg'
+
 function Rating({ host, rating }) {
   const range = [1, 2, 3, 4, 5]
-  const name = host.name.replace(
-    '\u0020'
-    // trouver unicode linebreak
-  )
+  // const name = host.name.replace(
+  //   '\u0020',
+  //   // trouver unicode linebreak
+  // )
 
   return (
     <div className="container">
       <div className="host">
-        {name}
+        {host.name.replace(' ', '\n')}
         <img src={host.picture} alt="host pp" />
       </div>
       {/* faire saut de ligne pour nom/prénom*/}
@@ -18,11 +21,13 @@ function Rating({ host, rating }) {
         {range.map((rangeAppart) =>
           rating >= rangeAppart ? (
             <span key={rangeAppart.toString()}>
-              M{/* remplacer par étoile pleine */}
+              {Full}
+              {/* remplacer par étoile pleine */}
             </span>
           ) : (
             <span key={rangeAppart.toString()}>
-              O{/* remplacer par étoile pleine */}
+              {Empty}
+              {/* remplacer par étoile vide */}
             </span>
           )
         )}
