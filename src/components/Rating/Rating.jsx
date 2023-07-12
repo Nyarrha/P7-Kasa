@@ -1,7 +1,7 @@
 // Afficher photo auteur, nom auteur, et fonction notation
 
-import Full from '../../assets/star-active 1.svg'
-import Empty from '../../assets/star-inactive 1.svg'
+// import Full from '../../assets/star-active 1.svg'
+// import Empty from '../../assets/star-inactive 1.svg'
 
 function Rating({ host, rating }) {
   const range = [1, 2, 3, 4, 5]
@@ -21,12 +21,14 @@ function Rating({ host, rating }) {
         {range.map((rangeAppart) =>
           rating >= rangeAppart ? (
             <span key={rangeAppart.toString()}>
-              {Full}
+              Full
+              {/* {Full} */}
               {/* remplacer par étoile pleine */}
             </span>
           ) : (
             <span key={rangeAppart.toString()}>
-              {Empty}
+              Empty
+              {/* {Empty} */}
               {/* remplacer par étoile vide */}
             </span>
           )

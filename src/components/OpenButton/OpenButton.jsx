@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Up from '../../assets/Up.svg'
-import Down from '../../assets/Down.svg'
+import Up from '../../assets/Up.png'
+import Down from '../../assets/Down.png'
 
 function OpenButton({ content }) {
   const [isOpen, setOpen] = useState(true)
