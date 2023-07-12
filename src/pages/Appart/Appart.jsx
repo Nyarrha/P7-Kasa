@@ -14,7 +14,7 @@ function Appart() {
   return (
     <div className="container" key={id}>
       id trouvé : {appart.id}
-      <Carousel pictures={appart.pictures} />
+      <Carousel pictures={appart.pictures} title={appart.title} />
       <div className="header-container">
         <h1>{appart.title}</h1>
         <span>{appart.location}</span>
