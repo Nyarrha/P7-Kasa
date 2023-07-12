@@ -16,6 +16,7 @@ ReactDOM.render(
         <Route path="/about" element={<About />} />
         <Route path="/apparts/:id" element={<Appart />} />
         <Route path="/error" element={<Error />} />
+        {/* Corriger redirection avec Navigate/redirect */}
       </Routes>
     </Router>
   </React.StrictMode>,
