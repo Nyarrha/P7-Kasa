@@ -1,0 +1,25 @@
+.landscapeabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    border-radius: 10px;
+background: #000;
+mix-blend-mode: darken;
+width: 336px;
+height: 223px;
+flex-shrink: 0;
+}
+
+.aboutcontainer{
+    // background: #F6F6F6;
+    background: blue;
+    & h2{
+        background: #FF6060;
+    }
+}
+
+.aboutcard{
+    display: flex;
+    flex-direction: column;
+}

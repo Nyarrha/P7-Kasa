@@ -1,4 +1,5 @@
 import previmg from '../../assets/previous.png'
+import nextimg from '../../assets/nextimg.png'
 import { useState } from 'react'
 import css from './Carousel.module.scss'
 
@@ -24,7 +25,10 @@ function Carousel({ pictures, title }) {
         alt="Previous"
       />
       <img src={pictures[pictureIndex]} alt={title} />
-      <button onClick={next}>Next</button>
+      <span className={css.number}>{`${pictureIndex + 1}/${
+        pictures.length
+      }`}</span>
+      <img className={css.next} src={nextimg} alt="Next" onClick={next} />
     </div>
   )
 }

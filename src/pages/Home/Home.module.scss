@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.appartlistcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.covercontainer{
+    display: flex;
+    justify-content: center;
+}
+.homepic{
+    border-radius: 10px;
+background: #000;
+mix-blend-mode: darken;
+width: 335px;
+height: 111px;
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+}
+
+.hometitle{
+    position: absolute;
+    left: 50px;
+    top: 12.5%;
+    color: #FFF;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%;
+}

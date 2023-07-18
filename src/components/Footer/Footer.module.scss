@@ -1,9 +1,21 @@
 .footer{
-    background-color: black;
-    display: flex;
-    color: white;
+display: flex;
+max-width: 90%;
+padding: 62px 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: -0.444px;
+background: #000;
 }
 
-.logoFooter {
-    width: 10px;
+
+.footertxt{
+    color: #FFF;
+text-align: center;
+font-size: 12px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
 }

@@ -1,7 +1,22 @@
-.header{
+.headercontainer{
     display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    color: red;
+    justify-content: space-between;
+    width: 90%;
     margin: 0 20px;
+    & nav{
+        display: flex;
+        flex-direction: space-evenly;
+        align-items: center;
+        color: #FF6060;
+        & a{
+            margin: 10px 10px ;
+            text-decoration-line: underline;
+        }
+    
+    }
+}
+
+.logoheader{
+    width: 150px;
+    height: 50px;
 }

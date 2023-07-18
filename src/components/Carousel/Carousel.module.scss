@@ -1,9 +1,25 @@
 .carousel{
     position: relative;
+    width: 90%;
+    border-radius: 50%;
 }
 
 .prev{
     position: absolute;
     top: 50%;
     left: 20px;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+
+.number{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
 }

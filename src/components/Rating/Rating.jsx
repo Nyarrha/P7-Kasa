@@ -5,15 +5,16 @@
 
 function Rating({ host, rating }) {
   const range = [1, 2, 3, 4, 5]
-  // const name = host.name.replace(
-  //   '\u0020',
-  //   // trouver unicode linebreak
-  // )
+  const [firstName, lastName] = host.name.split(' ')
 
   return (
     <div className="container">
       <div className="host">
-        {host.name.replace(' ', '\n')}
+        <div className="hostname">
+          <div>{firstName}</div>
+          <div>{lastName}</div>
+        </div>
+
         <img src={host.picture} alt="host pp" />
       </div>
       {/* faire saut de ligne pour nom/prénom*/}
