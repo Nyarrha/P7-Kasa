@@ -15,7 +15,7 @@ function Rating({ host, rating }) {
           <div>{firstName}</div>
           <div>{lastName}</div>
         </div>
-        <img src={host.picture} alt="host profile" />
+        <img className={css.hostpic} src={host.picture} alt="host profile" />
       </div>
       <div className={css.rating}>
         {range.map((rangeAppart) =>
