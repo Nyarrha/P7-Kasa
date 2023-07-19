@@ -1,7 +1,11 @@
+import css from './Tags.module.scss'
+
 function Tags({ tags }) {
-  ;<div className="tag">
-    <span>{tags}</span>
-  </div>
+  return (
+    <div className={css.tags}>
+      <span>{tags}</span>
+    </div>
+  )
 }
 
 export default Tags

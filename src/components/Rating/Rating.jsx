@@ -1,37 +1,28 @@
 // Afficher photo auteur, nom auteur, et fonction notation
 
-// import Full from '../../assets/star-active 1.svg'
-// import Empty from '../../assets/star-inactive 1.svg'
+import Full from '../../assets/fullstar.png'
+import Empty from '../../assets/emptystar.png'
+import css from './Rating.module.scss'
 
 function Rating({ host, rating }) {
   const range = [1, 2, 3, 4, 5]
   const [firstName, lastName] = host.name.split(' ')
 
   return (
-    <div className="container">
-      <div className="host">
-        <div className="hostname">
+    <div className={css.container}>
+      <div className={css.host}>
+        <div className={css.hostname}>
           <div>{firstName}</div>
           <div>{lastName}</div>
         </div>
-
-        <img src={host.picture} alt="host pp" />
+        <img src={host.picture} alt="host profile" />
       </div>
-      {/* faire saut de ligne pour nom/prénom*/}
-      <div className="rating">
+      <div className={css.rating}>
         {range.map((rangeAppart) =>
           rating >= rangeAppart ? (
-            <span key={rangeAppart.toString()}>
-              Full
-              {/* {Full} */}
-              {/* remplacer par étoile pleine */}
-            </span>
+            <img src={Full} alt="Full star" key={rangeAppart.toString()} />
           ) : (
-            <span key={rangeAppart.toString()}>
-              Empty
-              {/* {Empty} */}
-              {/* remplacer par étoile vide */}
-            </span>
+            <img src={Empty} alt="Empty star" key={rangeAppart.toString()} />
           )
         )}
       </div>

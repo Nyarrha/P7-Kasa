@@ -25,15 +25,23 @@ function Appart() {
         </div>
       </div>
       <div className={css.detailscontainer}>
-        <div className={css.description}>
+        <div className={css.descriptioncontainer}>
           <h2>Description</h2>
-          <Collapse id={id} content={appart.description} />
+          <Collapse
+            className={css.description}
+            id={id}
+            content={appart.description}
+          />
         </div>
 
-        <div className={css.equipments}>
+        <div className={css.equipmentscontainer}>
           <h2>Equipements</h2>
           <div>
-            <Collapse id={id} content={appart.equipments} />
+            <Collapse
+              className={css.equipments}
+              id={id}
+              content={appart.equipments}
+            />
           </div>
         </div>
       </div>
