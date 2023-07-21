@@ -18,7 +18,6 @@ function About() {
         {aboutData.map(({ title, content }) => {
           return (
             <div className={css.aboutcard} key={title}>
-              <h2 className={css.title}>{title}</h2>
               <Collapse title={title} content={content} />
             </div>
           )

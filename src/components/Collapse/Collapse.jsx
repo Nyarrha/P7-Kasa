@@ -1,20 +1,25 @@
 import { useState } from 'react'
 import Up from '../../assets/Up.png'
 import Down from '../../assets/Down.png'
-import css from './Collapse.scss'
+import css from './Collapse.module.scss'
 
-function Collapse({ content }) {
+function Collapse({ title, content }) {
   const [isOpen, setOpen] = useState(true)
-  const down = () => setOpen(false)
-  const up = () => setOpen(true)
-  return isOpen ? (
-    <div className={css.titlecontainer}>
-      <img src={Down} alt="Collapse" onClick={down} className={css.down} />
-    </div>
-  ) : (
-    <div className={css.tabcontainer}>
-      <img src={Up} alt="Collapse" onClick={up} className={css.up} />
-      <p>{content}</p>
+  const toggle = () => setOpen(!isOpen)
+  return (
+    <div className={css.dropdown}>
+      <div className={css.titlecontainer}>
+        <h2>{title}</h2>
+        <img
+          src={isOpen ? `${Up}` : `${Down}`}
+          alt="Collapse"
+          onClick={toggle}
+          className={css.collapse}
+        />
+      </div>
+      <div className={isOpen ? `${css.content}` : `${css.hidden}`}>
+        {content}
+      </div>
     </div>
   )
 }

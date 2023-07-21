@@ -13,13 +13,19 @@ flex-shrink: 0;
 
 .aboutcontainer{
     // background: #F6F6F6;
-    background: blue;
+    
     & h2{
         background: #FF6060;
     }
 }
 
 .aboutcard{
+    background: blue;
     display: flex;
     flex-direction: column;
+}
+
+.aboutcard > div{
+    width: 1240px;
+    margin: 10px 0;
 }

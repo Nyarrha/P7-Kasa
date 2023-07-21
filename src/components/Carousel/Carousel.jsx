@@ -19,16 +19,21 @@ function Carousel({ pictures, title }) {
   return (
     <div className={css.carousel}>
       <img
-        className={css.prev}
+        className={pictures.length === 1 ? `${css.hidden}` : `${css.prev}`}
         src={previmg}
         onClick={previous}
         alt="Previous"
       />
       <img src={pictures[pictureIndex]} alt={title} />
-      <span className={css.number}>{`${pictureIndex + 1}/${
-        pictures.length
-      }`}</span>
-      <img className={css.next} src={nextimg} alt="Next" onClick={next} />
+      <span
+        className={pictures.length === 1 ? `${css.hidden}` : `${css.number}`}
+      >{`${pictureIndex + 1}/${pictures.length}`}</span>
+      <img
+        className={pictures.length === 1 ? `${css.hidden}` : `${css.next}`}
+        src={nextimg}
+        alt="Next"
+        onClick={next}
+      />
     </div>
   )
 }

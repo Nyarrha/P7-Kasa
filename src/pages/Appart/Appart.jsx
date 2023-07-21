@@ -24,26 +24,11 @@ function Appart() {
           <Tags tags={appart.tags} />
         </div>
       </div>
-      <div className={css.detailscontainer}>
-        <div className={css.descriptioncontainer}>
-          <h2>Description</h2>
-          <Collapse
-            className={css.description}
-            id={id}
-            content={appart.description}
-          />
-        </div>
-
-        <div className={css.equipmentscontainer}>
-          <h2>Equipements</h2>
-          <div>
-            <Collapse
-              className={css.equipments}
-              id={id}
-              content={appart.equipments}
-            />
-          </div>
-        </div>
+      <div className={css.description}>
+        <Collapse id={id} title="Description" content={appart.description} />
+      </div>
+      <div className={css.equipments}>
+        <Collapse title="Equipements" id={id} content={appart.equipments} />
       </div>
     </div>
   )
