@@ -1,4 +1,4 @@
-.equipmentscontainer{
+.equipments{
     background: #f6f6f6;
     color: #ff6060;
     border-radius: 10px;
@@ -6,24 +6,17 @@
     & h2{
         background: #ff6060;
         color: #fff;
-        padding: 12px 18px;
-        border-radius: 10px;
-    }
-}
-
-.descriptioncontainer{
-    background: #f6f6f6;
-    color: #ff6060;
-    border-radius: 10px;
-   
-    & h2{
-        background: #ff6060;
-        color: #fff; 
-        padding: 12px 18px;
         border-radius: 10px;
     }
 }
 
 .description{
-    padding: 12px 18px;
+    background: #f6f6f6;
+    color: #ff6060;
+    border-radius: 10px;
+    & h2{
+        background: #ff6060;
+        color: #fff; 
+        border-radius: 10px;
+    }
 }
