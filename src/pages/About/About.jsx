@@ -3,16 +3,18 @@ import './About.module.scss'
 import Collapse from '../../components/Collapse/Collapse'
 import aboutData from '../../Datas/About'
 import css from './About.module.scss'
+import Banner from '../../components/Banner/Banner'
 
 function About() {
   return (
     <div className={css.container}>
-      <div>
-        <img
+      <div className={css.landscape}>
+        <Banner banner={landscapeAbout} />
+        {/* <img
           src={landscapeAbout}
           alt="about landscape"
           className={css.landscapeabout}
-        />
+        /> */}
       </div>
       <ul className={css.aboutcontainer}>
         {aboutData.map(({ title, content }) => {

@@ -4,11 +4,16 @@
     background: #ff6060;
     border-radius: 10px;
     padding: 0 12px;
-    margin: 20px 0; 
+    margin: 0; 
     & img{
         height: 32px;
         width: 32px;
-        object-fit: cover;
+        object-fit: contain;
+    }
+    & h2{
+        background: #FF6060;
+        margin: 4px 4px;
+        color: #fff;
     }
 }
 
@@ -19,4 +24,9 @@
 .dropdown > img{
     width: 24px;
     height: 10px;
+}
+
+.content{
+    margin: 0 10px 10px 10px;
+    padding-bottom: 10px;
 }

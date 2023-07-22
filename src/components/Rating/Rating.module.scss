@@ -1,7 +1,23 @@
 .hostpic{
     border-radius: 60px;
+    width: 64px;
+    height: 64px;
 }
 
 .hostname{
     color: #ff6060;
+    margin-top: 6px;
+    & > div{
+        padding: 5px 0;
+    }
+}
+
+.host{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }

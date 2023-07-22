@@ -1,31 +1,32 @@
-.landscapeabout{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 20px;
+body{
+    width: 430px;
+}
+
+.landscape > img{
     border-radius: 10px;
 background: #000;
 mix-blend-mode: darken;
 width: 336px;
 height: 223px;
 flex-shrink: 0;
+object-fit: contain;
 }
 
 .aboutcontainer{
-    // background: #F6F6F6;
-    
-    & h2{
-        background: #FF6060;
-    }
+    margin: 0;
 }
 
 .aboutcard{
-    background: blue;
-    display: flex;
-    flex-direction: column;
+    background: #f6f6f6;
+    color: #ff6060;
+    border-radius: 10px;
 }
 
 .aboutcard > div{
-    width: 1240px;
-    margin: 10px 0;
+   margin: 20px 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
 }

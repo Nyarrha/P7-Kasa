@@ -24,7 +24,7 @@ function Carousel({ pictures, title }) {
         onClick={previous}
         alt="Previous"
       />
-      <img src={pictures[pictureIndex]} alt={title} />
+      <img className={css.cover} src={pictures[pictureIndex]} alt={title} />
       <span
         className={pictures.length === 1 ? `${css.hidden}` : `${css.number}`}
       >{`${pictureIndex + 1}/${pictures.length}`}</span>

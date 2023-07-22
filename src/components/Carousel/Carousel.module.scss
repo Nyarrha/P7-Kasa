@@ -27,3 +27,11 @@
 .hidden{
     display: none;
 }
+
+.cover{
+    height: 300px;
+    border-radius: 18px;
+    margin-top: 20px;
+    width: 425px;
+    object-fit: contain;
+}
