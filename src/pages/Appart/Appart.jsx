@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import React from 'react'
 import { appartList } from '../../Datas/appartList'
 import Collapse from '../../components/Collapse/Collapse'
@@ -10,27 +10,37 @@ import css from './Appart.module.scss'
 function Appart() {
   const { id } = useParams()
   const appart = appartList.find((item) => item.id === id)
-  return (
-    <div className={css.container} key={id}>
-      <div className={css.carousel}>
-        <Carousel pictures={appart.pictures} title={appart.title} />
-      </div>
-      <div className={css.headercontainer}>
-        <h1 className={css.title}>{appart.title}</h1>
-        <span className={css.location}>{appart.location}</span>
-        <div className={css.tags}>
-          <Tags tags={appart.tags} />
+  if (appart === undefined) {
+    return <Navigate to="/error" />
+  } else {
+    return (
+      <div className={css.container}>
+        <div className={css.carousel}>
+          <Carousel pictures={appart.pictures} title={appart.title} />
         </div>
-        <Rating host={appart.host} rating={appart.rating} />
+        <div className={css.headercontainer}>
+          <h1 className={css.title}>{appart.title}</h1>
+          <span className={css.location}>{appart.location}</span>
+          <div className={css.tags}>
+            <Tags tags={appart.tags} />
+          </div>
+          <Rating host={appart.host} rating={appart.rating} />
+        </div>
+        <div className={css.details}>
+          <div className={css.description}>
+            <Collapse
+              id={id}
+              title="Description"
+              content={appart.description}
+            />
+          </div>
+          <div className={css.equipments}>
+            <Collapse title="Equipements" id={id} content={appart.equipments} />
+          </div>
+        </div>
       </div>
-      <div className={css.description}>
-        <Collapse id={id} title="Description" content={appart.description} />
-      </div>
-      <div className={css.equipments}>
-        <Collapse title="Equipements" id={id} content={appart.equipments} />
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Appart

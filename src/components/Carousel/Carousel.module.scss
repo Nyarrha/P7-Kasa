@@ -1,7 +1,6 @@
 .carousel{
     position: relative;
     width: 90%;
-    border-radius: 50%;
 }
 
 .prev{
@@ -13,7 +12,7 @@
 .next{
     position: absolute;
     top: 40%;
-    right: 0;
+    right: 10px;
 }
 
 .number{
@@ -34,4 +33,14 @@
     margin-top: 20px;
     width: 425px;
     object-fit: cover;
+}
+
+@media screen and (min-width: 451px){
+    .carousel{
+        width: 100%;
+    }
+
+    .cover{
+        width: auto;
+    }
 }

@@ -3,7 +3,11 @@ import css from './Tags.module.scss'
 function Tags({ tags }) {
   return (
     <div className={css.tags}>
-      <span>{tags}</span>
+      {tags.map((tag) => (
+        <div className={css.tag} key={tag}>
+          {tag}
+        </div>
+      ))}
     </div>
   )
 }

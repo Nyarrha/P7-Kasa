@@ -1,5 +1,3 @@
-// Afficher photo auteur, nom auteur, et fonction notation
-
 import Full from '../../assets/fullstar.png'
 import Empty from '../../assets/emptystar.png'
 import css from './Rating.module.scss'

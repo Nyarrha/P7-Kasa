@@ -1,7 +1,18 @@
-.tags{
+.tag{
     color: #fff;
     background: #ff6060;
     border-radius: 10px;
     padding: 5px 5px;
     text-align: center;
+    width: 94px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
 }
