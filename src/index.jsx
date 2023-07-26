@@ -15,7 +15,7 @@ ReactDOM.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/apparts/:id" element={<Appart />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<Error />} />
         {/* Corriger redirection avec Navigate/redirect */}
       </Routes>
     </Router>

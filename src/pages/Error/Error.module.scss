@@ -4,19 +4,27 @@
             flex-direction: column;
             text-align: center;
     & h1{
-
-
-font-size: 96px;
+font-size: 160px;
 font-style: normal;
 font-weight: 700;
 line-height: 142.6%;
+margin-bottom: 0;
     }
     & h2 {
 text-align: center;
-font-family: Montserrat;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
 line-height: 142.6%;
+margin-top: 0;
+margin-bottom: 160px;
+    }
+}
+
+.backhome{
+    color: #ff6060;
+    text-decoration: underline;
+    & > a:visited{
+        color: #ff6060
     }
 }

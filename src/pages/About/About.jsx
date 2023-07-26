@@ -8,13 +8,8 @@ import Banner from '../../components/Banner/Banner'
 function About() {
   return (
     <div className={css.container}>
-      <div className={css.landscape}>
+      <div className={css.banner}>
         <Banner banner={landscapeAbout} />
-        {/* <img
-          src={landscapeAbout}
-          alt="about landscape"
-          className={css.landscapeabout}
-        /> */}
       </div>
       <ul className={css.aboutcontainer}>
         {aboutData.map(({ title, content }) => {

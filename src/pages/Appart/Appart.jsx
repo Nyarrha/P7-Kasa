@@ -1,5 +1,3 @@
-// Récupérer id dans url
-// Page détails d'un appartement spécifique
 import { useParams } from 'react-router-dom'
 import React from 'react'
 import { appartList } from '../../Datas/appartList'

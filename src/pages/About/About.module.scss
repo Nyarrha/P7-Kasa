@@ -1,32 +1,37 @@
-body{
-    width: 430px;
-}
-
-.landscape > img{
-    border-radius: 10px;
-background: #000;
-mix-blend-mode: darken;
-width: 336px;
-height: 223px;
-flex-shrink: 0;
-object-fit: contain;
+.banner{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    & > img{
+        border-radius: 10px;
+    background: #000;
+    mix-blend-mode: darken;
+    width: 98%;
+    height: 225px;
+    flex-shrink: 0;
+    object-fit: cover;
+    }
 }
 
 .aboutcontainer{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 
 .aboutcard{
     background: #f6f6f6;
     color: #ff6060;
     border-radius: 10px;
+    margin-bottom: 20px;
+
 }
 
-.aboutcard > div{
-   margin: 20px 0;
-}
 
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }

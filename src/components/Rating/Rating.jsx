@@ -17,7 +17,7 @@ function Rating({ host, rating }) {
         </div>
         <img className={css.hostpic} src={host.picture} alt="host profile" />
       </div>
-      <div className={css.rating}>
+      <div>
         {range.map((rangeAppart) =>
           rating >= rangeAppart ? (
             <img src={Full} alt="Full star" key={rangeAppart.toString()} />
