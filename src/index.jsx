@@ -22,8 +22,6 @@ ReactDOM.render(
         <Route path="/apparts/:id" element={<Appart />} />
         <Route path="/error" element={<Error />} />
         <Route path="*" element={<Navigate to="/error" />} />
-
-        {/* Corriger redirection avec Navigate/redirect */}
       </Routes>
     </Router>
   </React.StrictMode>,
