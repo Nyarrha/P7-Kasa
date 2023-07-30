@@ -6,7 +6,6 @@ import css from './Collapse.module.scss'
 function Collapse({ title, content }) {
   const [isOpen, setOpen] = useState(true)
   const toggle = () => setOpen(!isOpen)
-  console.log(typeof content)
   return (
     <div className={css.dropdown}>
       <div className={css.titlecontainer}>
@@ -19,9 +18,11 @@ function Collapse({ title, content }) {
         />
       </div>
       <div className={isOpen ? `${css.content}` : `${css.hidden}`}>
-        {typeof content === 'string'
-          ? content
-          : content.map((element, i) => <div key={i}>{element}</div>)}
+        {typeof content === 'string' ? (
+          <div>{content}</div>
+        ) : (
+          content.map((element, i) => <div key={i}>{element}</div>)
+        )}
       </div>
     </div>
   )

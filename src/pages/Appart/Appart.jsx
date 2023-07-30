@@ -24,7 +24,9 @@ function Appart() {
           <div className={css.tags}>
             <Tags tags={appart.tags} />
           </div>
-          <Rating host={appart.host} rating={appart.rating} />
+          <div className={css.rating}>
+            <Rating host={appart.host} rating={appart.rating} />
+          </div>
         </div>
         <div className={css.details}>
           <div className={css.description}>

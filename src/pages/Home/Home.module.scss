@@ -14,9 +14,9 @@ body{
 }
 
 .bannerimg > img{
-    width: 98%;
+    width: 100%;
     height: 145px;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 16px;
 }
 
@@ -45,4 +45,27 @@ body{
 ul{
     list-style: none;
     padding-left: 0;
+}
+
+@media screen and (min-width: 451px){
+    .container{
+        margin: 25px 10% 0 10%;
+    }
+
+    .bannertitle{
+        font-size: 40px;
+        left: 30%;
+        top: 35%;
+        width: 100%;
+    }
+
+    .appartlistcontainer{
+        flex-direction: row;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }

@@ -1,6 +1,5 @@
 .carousel{
     position: relative;
-    width: 90%;
 }
 
 .prev{
@@ -31,16 +30,12 @@
     height: 300px;
     border-radius: 18px;
     margin-top: 20px;
-    width: 425px;
     object-fit: cover;
 }
 
 @media screen and (min-width: 451px){
-    .carousel{
+    .cover{
         width: 100%;
     }
-
-    .cover{
-        width: auto;
-    }
+    
 }

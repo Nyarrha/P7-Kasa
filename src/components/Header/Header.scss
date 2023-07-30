@@ -12,7 +12,6 @@
             text-decoration: none; 
             color: #FF6060;
         }
-    
     }
 }
 
@@ -28,7 +27,11 @@
 
 @media screen and (min-width: 451px){
     .headercontainer{
-        justify-content: space-around;
-        margin: 0;
+        justify-content: space-between;
+        margin: 0 10%;
+    }
+
+    .navlinks{
+        margin-right: 10%;
     }
 }

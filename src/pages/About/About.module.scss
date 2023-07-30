@@ -26,7 +26,6 @@
     color: #ff6060;
     border-radius: 10px;
     margin-bottom: 20px;
-
 }
 
 
@@ -34,4 +33,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (min-width: 451px){
+    .container{
+        margin: 0 10%;
+    }
+    
+    .banner{
+        margin: 2% 0;
+    }
+
+    .aboutcontainer{
+        margin: 2% 15%;
+    }
 }
