@@ -18,11 +18,9 @@ function Collapse({ title, content }) {
         />
       </div>
       <div className={isOpen ? `${css.content}` : `${css.hidden}`}>
-        {typeof content === 'string' ? (
-          <div>{content}</div>
-        ) : (
-          content.map((element, i) => <div key={i}>{element}</div>)
-        )}
+        {typeof content === 'string'
+          ? content
+          : content.map((element, i) => <div key={i}>{element}</div>)}
       </div>
     </div>
   )

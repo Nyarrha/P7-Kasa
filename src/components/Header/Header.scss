@@ -7,12 +7,16 @@
         display: flex;
         flex-direction: space-evenly;
         align-items: center;
-        & a{
+        &  a{
             margin: 10px 10px ;
             text-decoration: none; 
             color: #FF6060;
         }
     }
+}
+
+.link > a{
+    font-size: 12px;
 }
 
 .logoheader{
@@ -33,5 +37,9 @@
 
     .navlinks{
         margin-right: 10%;
+    }
+    
+    .link > a{
+        font-size: 24px;
     }
 }

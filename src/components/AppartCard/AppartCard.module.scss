@@ -44,12 +44,16 @@
         position: absolute;
         bottom: 20px;
         left: 60px;
-        width: 90%
+        width: 70%;
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 451px){
     .appartcard {
+        width: 340px;
+        height: 340px;
+        margin: 0 20px;
         & > img{
             width: 340px;
        height: 340px;
