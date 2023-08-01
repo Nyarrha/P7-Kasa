@@ -5,7 +5,7 @@
     margin: 0 20px;
     & nav{
         display: flex;
-        flex-direction: space-evenly;
+        justify-content: space-between;
         align-items: center;
         &  a{
             margin: 10px 10px ;
@@ -16,7 +16,7 @@
 }
 
 .link > a{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .logoheader{
