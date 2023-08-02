@@ -1,6 +1,7 @@
 import logoFooter from '../../assets/LOGOFooter.png'
 import css from './Footer.module.scss'
 
+// Création component Footer
 function Footer() {
   return (
     <div className={css.footer}>
