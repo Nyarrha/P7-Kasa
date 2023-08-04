@@ -8,7 +8,8 @@ import css from './Collapse.module.scss'
 // title et content en props
 function Collapse({ title, content }) {
   // écoute état du bouton collapse(ouvert/fermé)
-  const [isOpen, setOpen] = useState(true)
+  // défaut : fermé(false)
+  const [isOpen, setOpen] = useState(false)
   // fonction toggle : quand appelée,
   // passe le bouton collapse dans son état opposé
   const toggle = () => setOpen(!isOpen)

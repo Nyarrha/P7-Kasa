@@ -21,7 +21,7 @@ function Appart() {
     return (
       <div className={css.container}>
         {/* Appel component Carousel */}
-        <div className={css.carousel}>
+        <div>
           <Carousel pictures={appart.pictures} title={appart.title} />
         </div>
         <div className={css.headercontainer}>
