@@ -11,6 +11,7 @@ import Header from './components/Header/Header'
 import Error from './pages/Error/Error'
 import About from './pages/About/About'
 import Appart from './pages/Appart/Appart'
+import Footer from './components/Footer/Footer'
 
 // Création page React index
 ReactDOM.render(
@@ -31,6 +32,8 @@ ReactDOM.render(
         {/* Redirection page Error pour gestion mauvaises URL */}
         <Route path="*" element={<Navigate to="/error" />} />
       </Routes>
+      {/* Appel component Footer */}
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

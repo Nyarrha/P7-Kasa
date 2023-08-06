@@ -1,4 +1,3 @@
-import Footer from '../../components/Footer/Footer'
 import homeLandScape from '../../assets/home-landscape.png'
 import { appartList } from '../../Datas/appartList'
 import AppartCard from '../../components/AppartCard/AppartCard'
@@ -36,8 +35,6 @@ function Home() {
           })}
         </ul>
       </div>
-      {/* Appel component Footer */}
-      <Footer />
     </div>
   )
 }
