@@ -6,14 +6,12 @@ function AppartCard({ id, title, cover }) {
   return (
     // Lien vers page logement sélectionné à partir de son id
     <Link to={`/apparts/${id}`}>
-      <li className={css.appartcard}>
-        <img
-          src={cover}
-          alt={`${title} cover`}
-          className={css.appartitemcover}
-        />
-        <span className={css.appartitemtitle}>{title}</span>
-      </li>
+      <div className={css.card}>
+        <img className={css.image} src={cover} alt={title} />
+        <div className={css.overlay}>
+          <h3 className={css.title}>{title}</h3>
+        </div>
+      </div>
     </Link>
   )
 }

@@ -12,15 +12,16 @@ function Home() {
       <div className={css.bannercontainer}>
         <div className={css.bannerimg}>
           {/* Appel component Banner */}
-          <Banner banner={homeLandScape} />
+          <Banner
+            imageUrl={homeLandScape}
+            text="Chez vous, partout et ailleurs"
+          />
         </div>
-        {/* Affichage texte sur banner */}
-        <div className={css.bannertitle}>Chez vous, partout et ailleurs</div>
       </div>
 
       <div className={css.appartlistcontainer}>
         {/* Création liste de tous les logements */}
-        <ul className={css.appartlist}>
+        <div className={css.appartlist}>
           {/* Itération sur liste logements */}
           {appartList.map(({ id, title, cover }) => {
             return (
@@ -33,7 +34,7 @@ function Home() {
               </Link>
             )
           })}
-        </ul>
+        </div>
       </div>
     </div>
   )

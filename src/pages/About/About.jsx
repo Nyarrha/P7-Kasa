@@ -12,7 +12,7 @@ function About() {
     <div className={css.container}>
       <div className={css.banner}>
         {/* Appel component Banner avec prop banner */}
-        <Banner banner={landscapeAbout} />
+        <Banner imageUrl={landscapeAbout} />
       </div>
       {/* Création liste de collapses à afficher */}
       <ul className={css.aboutcontainer}>
